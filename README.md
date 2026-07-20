@@ -1,6 +1,6 @@
 # CAMP2Ex Ice Phase Analysis - Model Simulations
 
-Analysis and visualization code for cloud microphysics simulations from the CAMP2Ex project, focusing on ice phase processes. This repository contains Jupyter notebooks for data processing and analysis of model simulations with outputs from the P3 (Predicted Particle Properties) microphysics scheme.
+Analysis and visualization code for cloud microphysics simulations from the CAMP2Ex project, focusing on ice phase processes w/ a novel SIP (drop fragementation upon freezing) parameterization using the DHARMA LES w/ both bin and bulk microphysics schemes. This repository contains Jupyter notebooks for data processing and analysis of model simulations with outputs from DHARMA and compared against in stiu aircraft observations from the NASA P-3B and SPEC Learjet aircraft during the NASA CAMP2Ex campaign. 
 
 ## Quick Start
 
@@ -33,7 +33,7 @@ pip install numpy matplotlib scipy xarray netCDF4
 The simulations use large netCDF files that contain model outputs. These files are **available upon request** and should be placed in an accessible directory referenced by the notebooks. 
 
 Key data files needed:
-- Simulation output netCDF files from DHARMA model runs (P3 microphysics scheme)
+- Simulation output netCDF files from DHARMA model runs
 - Aircraft observations from CAMP2Ex field campaign
 
 Intermediate processed data (`.npz` files) are included in this repository.
@@ -93,9 +93,6 @@ The following `.npz` (NumPy) files contain processed data used by the analysis s
 - **`bin_noturb_histograms_log10_cld.npz`** - Cloud-only no-turbulence histograms
 - **`bin_noturb_histograms_log10_updraft.npz`** - Updraft regions, no-turbulence histograms
 
-### Legacy/Archive
-
-- **`old/`** - Previous versions and preliminary analyses (archived)
 
 ## Workflow
 
